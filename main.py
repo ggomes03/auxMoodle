@@ -9,7 +9,7 @@ if __name__ == '__main__':
   janela.mainloop()
 
 
-with open(path) as f:
+with open(path, encoding='cp1252',errors='ignore') as f:
   leitor = csv.reader(f)
   csvData = list(leitor)
 
